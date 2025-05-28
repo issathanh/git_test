@@ -3,9 +3,16 @@
 }
 
 div {
-    color: orange;
+    color: black;
 }
 
 div h1 {
     color: blue; /* Specifically set the h1 color inside div */
+}
+
+.div-class {
+    color: black
+}
+#div-id{
+    background-color: red;
 }
