@@ -16,3 +16,68 @@ div h1 {
 #div-id{
     background-color: red;
 }
+
+/* grouping selector */
+.read, 
+.unread {
+  color: white;
+  background-color: black;
+}
+
+/* We have two elements with the subsection class that have some sort of unique styles, but what if we only want to apply a separate rule to the element that also has header as a second class? Well, we could chain both the class selectors together in our CSS like so: */
+.subsection.header{
+    color: red; 
+}
+/* Chaining a class and an id */
+.subsection#preview{
+    color: blue
+}
+
+.ancestor .contents{
+    color: yellow;
+
+}
+
+p {
+  /* hex example: */
+  color: #1100ff;
+}
+
+p {
+  /* rgb example: */
+  color: rgb(100, 0, 127);
+}
+
+p {
+  /* hsl example: */
+  color: hsl(15, 82%, 56%);
+}
+
+/* If a browser cannot find or does not support the first font in a list, it will use the next one, then the next one and so on until it finds a supported and valid font. This is why it’s best practice to include a list of values for this property, starting with the font  */
+/* you want to be used most and ending with a generic font family as a fallback, e.g. font-family: "Times New Roman", serif; */
+.font .family-name {
+    color: blue; 
+    font-family:"Times New Roman", serif;
+}
+
+.font .generic-family-name{
+    color: green;
+    font-family:serif;
+}
+.font .size{
+    color: red; 
+    font-size:22px
+}
+
+.font .weight{
+    color: orage; 
+    font-weight:625
+}
+
+.font .text-align{
+    text-align: center
+}
+.img1{
+    height: auto;
+    width: 300px;
+}

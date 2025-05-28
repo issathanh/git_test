@@ -29,5 +29,53 @@
     <div class="div-class">This is a div class .deep-class{color: black;}</div>
     <div id="div-id"> This is a div id (hashtag)title{background-color: red;}</div>
     <p>Because a div id is also a div, so it inherit the black color letter</p>
+    <strong>id should be use spraringly if any at all since class will suffice</strong>
+
+    <h1>Chain the class together by its firstclass and seperate them by their second class</h1>
+    <div>
+        <div class = "subsection header"> div class="subsection header"
+            <ul>
+                <li>.subsection.header{color = red;}</li>
+            </ul>
+        </div>
+        
+        <p class = "subsection preview">div class="subsection preview"</p>
+    </div>    
+
+
+
+    <div class = "ancestor">
+        <div class = "contents">
+            same name under 1 wrap can be affected by using .ancestor .name {color:yellow;}
+            <div class = "contents">second</div> 
+        </div>
+    </div>
+    <div class = "contents">third</div>
+
+    <div class = "font">
+        <div class = "family-name"><strong>font-family-name</strong>: <em>"Time New Roman"</em> (we use quotes due to the whitespace between words)</div>
+        <div class = "generic-family-name"><strong>generic family name</strong>: <em>serif</em> never use quote</div>
+        <div> if a browser cannot find or does not support the first font it will go down the list so we declare it as such:</div>
+        <div>font-family: "Times New Roman", serif;</div>
+        <div class = "size"><strong>font-size</strong>: font-size:22px change font size to 22px </div>
+        <div class = "weight"><storng>font-weight</storng>: font weight affects the boldness of text font-weight: bold, or a number between 1 and 1000</div>
+        <div class = "text-align"><strong>text-align</strong>: text-align: center will align text horizontally with an element </div>
+    </div>
+
+    <img class="img1" src="../css_beginner/charlesdeluvio-Mv9hjnEUHR4-unsplash.jpg" alt="dog" width="300" height="200">
+    <strong>The problem:</strong> When you don't specify image dimensions, here's what happens:
+    <ol>
+        <li>Page loads first (text, buttons, etc.)</li>
+        <li>Image space is empty/invisible</li>
+        <li>Image finally loads and suddenly appears</li>
+        <li>Everything else gets pushed around to make room</li>
+        <li>User experiences jarring page "jump"</li>
+    </ol>
+    <strong>solution</strong>Always include both:
+    <ul>
+        <li>HTML attributes: img src="photo.jpg" width="300" height="200"</li>
+        <li>CSS properties: width: 300px; height: 200px;</li>
+    </ul>
+    <a href="../css_beginner/adding_css_to_html.html" target="_blank" >Adding css to html</a>
 </body>
 </html>
