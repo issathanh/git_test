@@ -1,0 +1,11 @@
+* {
+    color: purple;
+}
+
+div {
+    color: orange;
+}
+
+div h1 {
+    color: blue; /* Specifically set the h1 color inside div */
+}
